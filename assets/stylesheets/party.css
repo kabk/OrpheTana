@@ -1,0 +1,44 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 600px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+body {
+font-family:‘Droid Sans’, arial, sans-serif;
+color: #777;
+}
+/* Our daytime Image top and center repeat horizontal */
+.day
+{
+background: color:#0000 top center repeat-x #e0d0b7;
+}
+/* Our Sunset Image top and center repeat horizontal */
+.sunset
+{
+background: url(images/sleepy-cove-bgrpt-dusk.jpg) top center repeat-x #887f70;
+}
+/* Our Nightime Image top and center repeat horizontal */
+.night
+{
+background: color:#0000 top center repeat-x #887f70;
+}

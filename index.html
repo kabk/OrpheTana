@@ -1,0 +1,446 @@
+<head>
+	<title>pARTy</title>
+	<script src="http://xoxco.com/js/jquery.min.js"></script>
+	<script src="aware.js"></script>
+	<script>
+		$(function() {
+			$().aware();
+		});
+	</script>
+	<style>
+
+		body {
+			font-family: 'helvetica';
+		}
+
+		#wrapper {
+			width: 90%;
+			max-width: 1024px; 
+			margin: 0px auto;
+			overflow: visible;
+			text-align: center;
+		}	
+		
+		h1 { 
+			font-size: 40px;
+		}
+		
+		#time_of_day { 
+			width: 50%; 
+		}
+		
+		#time {
+			font-weight: reguler;
+			font-size: 60px;
+			margin:0;
+		}
+
+/* Hide messages by default */
+	
+		h1.morning, h1.afternoon, h1.nighttime {
+			display: none;
+		}
+
+/* special styles for day time */		
+		body.daytime {
+			display: none;
+			color: #369;
+			background-color: #FFF;
+	
+		}
+
+		body.morning {
+			background-image: -webkit-linear-gradient(#170ff1 1%, #ffffff 25%)
+			
+		}
+
+		body.morning.earlymorning {
+			background-color: #333;
+			background-image: -webkit-linear-gradient( #333 0%,#f1d97a 90%);
+		}
+		
+		body.earlymorning h1, 
+		body.earlymorning h2 { 
+
+			color: #FFF;
+		}		
+		
+		.morning h1.morning {
+			display: none;
+		}
+		
+		.morning .h1.earlymorning {
+			display: none;
+		}
+		
+		.morning.earlymorning .h1.morning {
+			display: none;
+		}
+
+		.afternoon h1.afternoon {
+			display: none;
+		}
+
+/* special styles for night time */
+		body.nighttime {
+			color: #fff;
+			background-color: #333;
+		}
+
+		body.nighttime h1,
+		body.nighttime h2 {
+			display: block;
+			color: #a008eb;
+		}
+		body.nighttime a {
+			color: #8331cb;
+		}
+
+		.nighttime h1.nighttime {
+			display: none;
+		}		
+		
+		body.night {
+			background-image:	 -webkit-linear-gradient(#000 0%, #333 60%)
+			
+		}		
+
+		body.latenight {
+			background-image:	 -webkit-linear-gradient(#000 0%, #333 90%)
+		}		
+		
+		body.latenight h1 { 
+
+			color:fuchsia;
+		}
+		body.latenight h2 { 
+
+			color: #e806f7;
+		}
+		body.latenight a {
+			color:  #07ff56;
+		}
+
+
+	</style>
+	
+	<script>
+		$(function() {
+			function showTime(time) {
+				m = ' AM';
+				if (time >= 12 && time < 24) {
+					m = ' PM';
+				}
+				if (time > 12) {
+					time -= 12;
+				}
+				if (time == 0) {
+					time = 12;
+				}
+				time = time +m;
+				$('#time').html(time);
+			}
+			
+			$('#time_of_day').on('change',function() {
+				$('body').removeClass();	
+				showTime($(this).val());
+				$().time_of_day($(this).val());
+				
+			});
+			
+			$('#time_of_day').val(new Date().getHours());
+			showTime(new Date().getHours());
+
+		})
+	</script>
+</head>
+<body>
+	
+	<div id="wrapper">
+		<h1 class="morning">pARTy</h1>
+		<h1 class="afternoon">pARTy</h1>
+		<h1 class="nighttime">pARTy</h1>
+
+		<h2>
+		“Wat ik zag is een wereld waarbij je alles kan proberen, een plek om jezelf te zijn, de alledaagse realiteit vergeten, proberen om mensen te motiveren, naar muziek luisteren, een plek om een biertje te drinken, en nog veel meer.”<Br/>
+			O.O Tan-A-Kiam<br/>
+			
+	<nav class="container">
+		<a href="#inleiding"> Waarom is een feestje een Gesamtkunstwerk?</a>
+		<a href="#interviews">Interviews</a>
+		<a href="#reflectie-interviews">Reflectie interviews</a>
+		<a href="#conclusie">Conclusie</a>
+		<a href="#bronnen">Bronnen</a>
+	</nav>
+		</h2>
+		
+	<div class="container">
+		<section id="inleiding">
+		<h2>Inleiding</h2>
+		<p>Door de jaren heen ben ik naar veel feesten geweest. Van illegale feesten in verschillende loodsen waar er alleen maar Hardcore wordt gedraaid. Tot het Mekka van ‘clubben’ waar je danst op soulfull house; Ibiza. Door deze ervaring ben ik gaan inzien hoe belangrijk feesten is. Het is een open school die je veel lessen leert zonder dat je het merkt. En naarmate je ouder wordt, ga je telkens een klas hoger (hopelijk). Door je leeftijd verandert ook de manier waarop je feest. Het zijn net kameleons, ze passen zich aan aan jou niveau.
+
+Wat heeft dit allemaal te maken met grafisch ontwerpen? Best veel eigenlijk. Een feest is een ervaring. Er worden verschillende aspecten met elkaar gecombineerd zodat die ervaring rijk wordt. Het maakt niet uit waar je vandaan komt en hoe oud je bent, het is een universele taal die iedereen begrijpt. En er wordt hard gewerkt om je op verschillende manieren te stimuleren tot het doen van één ding: plezier hebben en de wereld even vergeten! Als één van deze onderdelen ontbreken, is die ervaring er niet.
+
+Zo kijk ik ook naar grafisch ontwerpen. Het is een ervaring die iets bij je los moet maken. Het zij op een goede of slechte manier. Hier streef ik zelf ook naar met mijn ontwerpen. Net als bij een feest zal ik alle mogelijke middelen gebruiken om een reactie te ontketenen bij de gebruiker. 
+
+Bij een feest werken verschillende disciplines samen om het tot een succes te maken. Als een feest een multidisciplinaire ervaring is, telt een feest dan ook als een Gesamtkunstwerk? En wat is de rol van grafisch ontwerpers hierin?</p>
+</section></div>
+		
+	<div class="container">
+		<section>
+		<h2>Wat versta ik onder een feest?</h2>
+		<p>Een feest is een beetje een vaag begrip, je kunt er van alles onder verstaan. Om duidelijker te maken wat ik versta onder een feest, zal ik beginnen met onderscheid te maken tussen een feest is en een viering.
+Er zijn natuurlijk allerlei verschillende soorten feestjes: verjaardagsfeestjes, bruiloften, begrafenissen, babyshowers enzovoorts. Deze evenementen zie ik niet als een feestje maar als een viering. Je komt bij elkaar om iets te vieren, iemand in het zonnetje te zetten of juist niet. Dit mondt wel uit in een feestje. Als voorbeeld van een viering neem ik een verjaardagsfeestje: je begint eerst bij bij iemand thuis, van daaruit ga je naar de club en daarna ga je naar huis. In deze scriptie wil ik het hier niet over hebben, omdat in dit geval de club wordt bezocht met het doel de verjaardag van de jarige te vieren. Niet het feest en het ervaren van een tijdelijke andere wereld staan op dat moment centraal, maar de jarige job en het vieren van zijn verjaardag. 
+Ik wil het hebben over de spontane feestjes, de avonden waar met z’n allen besloten wordt om naar een discotheek te gaan en dan gewoon te gaan dansen. Het ervaren van het feest staat dan centraal, in tegenstelling tot een viering waarbij er een persoon of gebeurtenis centraal staat. Deze avonden zijn het interessantste omdat je er niet heb gepland om uit te gaan. Je staat op zulke avonden meer open voor nieuwe impulsen. Dit zijn ook de momenten waarop je de beste feestjes ervaart.
+Feestjes zijn in mijn opinie utopische werelden waar je in kunt verdwijnen. Je bevindt je tijdelijk in een wereld waarin alles wat je ziet, hoort en voelt mooi is. Een wereld waarin er alleen maar mooie mensen, mooie muziek en een mooie omgeving zijn en waarin iedereen op dezelfde golflengte zit. De echte wereld en al je sores bestaan even niet. 
+Althans dat gebeurt op goede feestjes. Maar wat maakt een feest tot een goed feest? Ik ben van mening dat het een combinatie is van een aantal factoren; de mentale staat waar je in zit, de plek waar je bent, de muziek die je hoort, de mensen om je heen en hoe hard je naar de klote bent van de drank/drugs. Als deze dingen allemaal goed in harmonie zijn, dan kun je optimaal van het feest genieten. Deze hele goede feestjes geven je het gevoel dat je je in een andere wereld bevindt. De ervaringen die je in deze tijdelijke wereld opdoet zijn zo intens dat wanneer jij er weer uitstapt, deze je voor altijd bijblijven.
+
+Er zijn een aantal concrete voorwaarden waaraan een feest moet voldoen om zo'n tijdelijke andere wereld te scheppen: een donkere ruimte, publiek, muziek, drugs (hieronder valt alcohol en harddrugs) en decor. 
+Hoewel festivals vaak ook aan deze omschrijving voldoen, vind ik ze te breed en chaotisch om ze als feest te behandelen. Op festivals zijn er meerdere feesten en werelden naast elkaar, waar je zo in en uit kunt stappen, terwijl festivals ook al een tijdelijke andere wereld op zich zijn. De totaalervaring van deze festivals kan misschien wel groter en intenser zijn omdat je veel langer in hun utopische fantasie wereld zit. Om het onderwerp concreet en behapbaar te houden laat ik festivals buiten beschouwing. In deze scriptie wil ik mij  focussen op feesten die meer afgebakend zijn, die worden georganiseerd met het doel die andere wereld te verschaffen, waarbij verschillende disciplines samenkomen om die tijdelijke wereld te creëren en die ook worden bezocht met het doel om in die andere wereld te stappen.
+
+Omdat iedereen bij de term feesten een andere interpretatie heeft wil ik hierbij een globaal woord gebruiken wat ik versta onder een feestje. Dat is pARTy.</p></section></div>
+		
+	<div class="container">
+		<section>
+		<h2>Wat is een Gesamtkunstwerk?</h2>
+		<p>Vrij vertaald: betekent dit woord ‘het totale kunstwerk’. Het doel is dat je als gebruiker een soort van bovennatuurlijke ervaring voelt en vandaar uit Anders gaat kijken naar de wereld. Om dit gevoel te kunnen realiseren worden bijna alle creatieve disciplines versmolten tot één Groot kunstwerk. 
+Voorbeelden hiervan zijn overal te vinden. Het begon allemaal bij de oude Grieken. Hier kan je de basis van het Gesamtkunstwerk terugvinden in de vorm van theater. Het begon allemaal met de viering van de Dionysia. Dionysos was de god die wijn, landbouw, vruchtbaarheid, onsterfelijkheid, dans, plezier, leven en extase had gebracht bij de mensen. Hierbij speelden acteurs en muzikanten voorstellingen voor het publiek die gingen over de relatie tussen de mens en de goden. Hierbij waren muziek en woord even belangrijk. De theaters waren voor iedereen beschikbaar en werden dan ook druk bezocht door alle lagen van de bevolking.
+Nog een mooi voorbeeld zijn kerken. Deze zijn gebouwd met maar een doel en dat is je te laten ervaren wat de kracht van het geloof is. Bij deze gebouwen begint de voorpret al buiten de kerk met sculpturen die belangrijke passages uit de bijbel laten zien. Eenmaal binnen word je altijd overrompeld door grootschaligheid van een kerk. Aan de hoge muren en plafonds hangen er altijd ornamenten die vertonen wat jou te wachten staat wanneer je sterft. Met de uitvinding van glas in lood werden deze verhalen nog wat spectaculairder weergegeven. De sculpturen en het glas in lood werden ontworpen door beeldhouwers.
+Richard Wagner heeft heeft het idee van de Gesamtkunstwerk revolutionair gemaakt met zijn opera's. Wagner geraakte geïnspireerd door het werk van filosoof Arthur Schopenhauer. Schopenhauer was een metafysicus die niet geloofde niet in de vooruitgang of in de goede bedoelingen van de mens. 
+In de tijd van Wagner zijn opera's getransformeerd van een prestigieus evenement naar een simpel muziek concert. Men ging naar de opera om lekker naar mensen te kijken, iets te drinken enz. Na elke passage klapte het publiek om de operazangers ter eren. Muziek wordt op dat moment gezien als een belangrijkere kunstvorm dan het gesproken woord. Wagner verlangde naar de manier hoe de klassieke Grieken entertainment maakten en ervoeren.  In de periode dat Wagner leefde was de romantiek de stroming die Duitsland domineerde. De belangrijkste punten van de romantiek zijn dat je als persoon meer op je intuïtie, emotie en verbeeldingskracht door het leven ging. Dit kwam voort uit de gedachtengang van de oude Grieken. Deze ideeën golden niet alleen voor de elite maar ook voor de gewone burgers. Als kunstenaar werd je toen meer gerespecteerd omdat je deze belangrijke verbeeldingen kon visualiseren en tastbaar maken. Gecombineerd met de filosofie van Schopenhauer (hij kwam als eerst met de term Gesamtkunstwerk) ging Wagner aan de slag met het ontwikkelen van zijn “Gesamtkunstwerk”.
+In het concept van Wagner waren er drie belangrijke factoren: het verhaal, de bijdragen van verschillende kunstdisciplines en het effect op de bezoeker. Waarvan de laatste twee de conventies zouden doorbreken. Het verhaal kan gezien worden als een concept. Dit communiceert een idee of een visie van de maker. Tevens is het verhaal de blauwdruk voor wat er nodig is aan vormgeving om de totaal ervaring te bewerkstelligen. Geen enkel verhaal is hetzelfde, waardoor er telkens andere manieren van vormgeving ontwikkeld zullen moeten worden. Het verhaal werd visueel ondersteund door het decor, hierbij kwamen de andere kunstdisciplines aan bod. Daarbij was het orkest geheel verdwenen uit het zicht van het publiek. Je kon de muziek wel horen maar je wist niet waar het vandaan kwam waardoor je focus op het podium kwam te liggen in plaats van op het orkest. Dit zorgde ervoor dat de bezoekers alleen aandacht hadden voor het verhaal. Je werd als deelnemer van het Gesamtkunstwerk overrompeld door de verschillende impulsen die het verhaal op je af vuurde. De voorstelling moest effect hebben op de gemoedstoestand van de bezoeker, ook nadat die klaar was met het bekijken van de opera. Wagner wilde dat je, na het bekijken van zijn werk, ging nadenken over verschillende kwesties van de samenleving. Deze ideeën verwerkte hij in het verhaal. Dit deed hij door karakters in zijn verhalen te verwerken, die worstelden met goed en kwaad.
+Dit totaalconcept kom helemaal tot zijn recht in “Der Ring des Nibelungen” (1876). Deze opera bestond uit vier voorstellingen die een overkoepelend verhaal vertellen (met behulp van een leidmotief) over macht, liefde, natuur en vernietiging. De productie werd voor het eerst opgevoerd in het nieuwe theater “Bayreuth Festspielhaus”, waarvan de bouw overzien was door Wagner. Tijdens de bouw van het theater waren er veel vernieuwingen doorgevoerd om grote producties aan het publiek te kunnen laten zien. Wagner heeft met zijn “Gesamtkunstwerk” ervoor gezorgd dat kunstenaars zich realiseerde dat interdisciplinaire samenwerking voor een groter effect kan zorgen op de bezoeker. 
+Door de jaren heen werd de participatie van de bezoekers een steeds belangrijker onderdeel in het Gesamtkunstwerk. Ik denk dat dat te maken heeft met de slechte situaties (oorlogen) die ervoor zorgde dat men meer voor zichzelf ging nadenken dan iets simpelweg te accepteren. Daarnaast had de Gesamtkunst, door de technologische vooruitgang, flinke impulsen gekregen om zichzelf te innoveren. Een hoogtepunt hiervan is het werk Cités-Cinés uit 1987 van Francois Confino. Hierin werd je als bezoeker gedropt in een wereld waarin je je eigen verhaal kon schrijven. De 17 decorstukken waren allemaal afgeleid van filmsets die volledig interactief waren. Alles was aan elkaar verbonden; je kon actief gebruikmaken van het decor, zo kon je bijvoorbeeld zitten op een bankje en waren er filmprojecties te zien die scènes weergaven van filmregisseurs die de nadruk legden op de stad. Wireless headsets speelden geluiden af die bij elke scène uniek waren. Door de grote schaal van Cités-Cinés, gecombineerd met de nieuwe techniek van wireless headsets en het idee dat de bezoeker zelf als regisseur en acteur aan de slag kon, zorgde voor een totaal nieuwe ervaring.
+Het is wel duidelijk dat een Gesamtkunstwerk pas succesvol kan zijn, wanneer het verhaal en de uitwerking een overweldigende reactie creëren bij de bezoeker. Meestal gaat dit gepaard met het visualiseren van een utopische wereld waarin alle zintuigen gestimuleerd worden zodat je, door middel van totale immersie, in deze wereld terechtkomt.</p>
+</section></div>
+
+
+<div class="container">
+	<section>
+	<h2> Welke disciplines horen bij een pARTy?</h2>
+	<p>Een pARTy organiseert zichzelf niet, het komt niet zomaar tot stand. Hierbij zijn een aantal mensen nodig die input kunnen geven aan het totaal kunstwerk. Ten eerste zijn er een aantal zaken van belang die ervoor zorgt dat er een feest succesvol is. 
+De belangrijkste persoon is de organisator: dit is degene die met het totaalconcept aankomt. Deze persoon of organisatie zoekt dan de juiste mensen bij elkaar die passen binnen het totaalconcept. 
+De locatie is een vitaal onderdeel van een pARTy. Deze ruimte moet geschikt zijn om het totaal concept goed te kunnen presenteren aan de bezoekers. De ruimte heeft een grote impact op de ervaring van het totaalconcept. De eisen waaraan de ruimte moet voldoen, zijn afhankelijk van het totaalconcept. In sommige gevallen is bereikbaarheid belangrijk, in andere gevallen juist de ambiance. 
+Hoewel ik van mening ben dat een pARTy altijd in het donker moet zijn is het toch belangrijk dat men elkaar en de omgeving kan zien. De rol die licht vooral heeft, is het intiem maken van een ruimte. Deze rol van licht is in discotheken veel groter geworden. Door het oplichten en dimmen van een ruimte in een sequentie (denk bijvoorbeeld aan een stroboscoop) draagt licht bij aan het visuele aspect aan een pARTy. Deze discipline is er een waarvan je niet zo snel door hebt dat het bijdraagt aan de ervaring. Wanneer licht en muziek in ritme zijn met elkaar helpt dit de bezoeker makkelijker om de verdwijnen als individu en op te gaan in de groep. Concreet heb je een goed lichtplan en een goede lichttechnicus nodig, om een pARTy tot een succes te kunnen maken.
+Van hieruit komt de DJ in het spel. Deze persoon hypnotiseert de bezoeker door middel van het ritme van de muziek. Dit zorgt ervoor dat de bezoeker zich kan overgeven aan het totaal kunstwerk. Dit is een van de belangrijkste aspecten in het totaal kunstwerk. Door deze techniek wordt de bezoeker van het totaal kunstwerk makkelijker getransporteerd naar de fantasiewereld die de organisator voor ogen heeft. Het lastige van deze discipline is dat de DJ en de bezoeker met elkaar in harmonie moeten zijn. De DJ moet met zijn muziek aansluiten bij de gemoedstoestand van de bezoeker en andersom moet de bezoeker mee willen bewegen in de veranderingen van de muziek van de DJ, om deze reis te kunnen starten en vol te houden. Wanneer dit succesvol is, is de muziek de verbindende factor die ervoor zorgt dat je als bezoeker lang in de fantasiewereld kan blijven ronddwalen.
+Ook moet er informatie gecommuniceerd worden over de pARTy, bijvoorbeeld over tijdstip en locatie. Dit is de taak van een ontwerper in het totaal kunstwerk. De ontwerper heeft een belangrijke functie omdat hij/zij de bezoeker moet overtuigen om naar het evenement te komen. Belangrijke onderdelen die gecommuniceerd moeten worden zijn onder andere; de locatie, tijdstip en de DJ’s/artiesten. Het is van essentieel belang dat de communicatie veel mensen bereikt, omdat men niet in zijn uppie feest. Wanneer veel mensen op een plek samen komen, zijn ze eerder geneigd om elkaar na te gaan doen. Met behulp van de muziek van de DJ uit dit nadoen zich in dit geval in dansen. Hoe meer mensen er dansen, hoe geslaagder de bezoekers de pARTy vinden.  
+De sfeer van het feest is ook een belangrijk punt dat in de communicatie moet worden overgebracht op de potentiële bezoeker. Via flyers maar ook via nieuwe media wordt geprobeerd het gevoel van het totaalconcept weer te geven. Je kunt dit zien als voorpret voor het uiteindelijke evenement. 
+Decor draagt bij aan het overall gevoel van de locatie. Het maakt de tijdelijke wereld waarin mensen zich bevinden visueel. Het overbrengen van het verhaal van het feest, is afhankelijker van visuele middelen als het decor, naarmate het overbrengen van het verhaal minder met behulp van gesproken of geschreven tekst kan worden gedaan. De tijdelijke wereld wordt niet continu uitgelegd door middel van ondertiteling of een voice-over, maar door het visualiseren van die wereld.
+Extra visuele stimulatie wordt verzorgd door VJ’s. VJ-en is een betrekkelijk nieuwe vorm van visuele stimulatie waarbij bepaalde elementen van het feest extra benadrukt kunnen worden. Zo kan de VJ visueel de inhoud van de muziek benadrukken, maar bijvoorbeeld ook de algemene sfeer van de pARTy en het publiek wat daar op afkomt. Het staat los van het lichtplan en de lichttechnicus, maar moet daar wel mee in harmonie zien te werken. 
+Tenslotte is er ook een belangrijke rol weggelegd voor de bezoeker als deelnemer aan de pARTy. Het publiek kan op een aantal manieren actief deelnemen aan het feest. Deels in de voorbereiding, deels op het moment van het feest zelf. Als voorbereiding kan de bezoeker zich verkleden, opmaken of een speciale outfit aantrekken om nog beter de aansluiting te kunnen vinden bij de tijdelijke wereld die zich op de pARTy afspeelt. Daarnaast kan de bezoeker als voorbereiding geestverruimende middelen gebruiken, bijvoorbeeld alcohol of xtc. Dit werkt angst verlagend en maakt het makkelijker voor mensen om zich in een ruimte vol vreemden te bevinden en contact met hen te zoeken. Daarnaast vermindert alcohol het gevoel van schaamte, waardoor mensen het minder eng vinden om te gaan dansen. Het extra effect van xtc is dat men expressiever wordt in het uiten van zijn gevoelens naar anderen.</p>
+</section></div>
+
+
+<!-- !HOOFDSTUK 2 -->
+<div class="container">
+	<section id="interviews">
+	<h2>Interviews met ontwerpers</h2>
+	<p>Om te onderzoeken in hoeverre andere ontwerpers pARTies ook als Gesamtkunstwerken zien, heb ik drie interviews afgenomen met verschillende ontwerpers die zich veel bezig houden met het ontwerpen voor pARTies. Hierbij wilde ik achterhalen of zij ook een pARTy zien als een Gesamtkunstwerk, hoe zij de interdisciplinaire samenwerking zien, hoe zijn hun rol als grafisch ontwerper bekijken en hoe zij de invloed van hun ontwerpen op de pARTy zelf zien. Daarnaast was ik benieuwd wat voor invloed het ontwerpen voor feestjes op hun carrière en ontwikkeling heeft gehad.</p>
+</section></div>
+
+
+<div class="container">
+	<section>
+	<h3>ZenzDesign</h3>
+	<p><i>Hoe ben je begonnen met het ontwerpen voor feestjes?</i>
+Rond mijn 16de was ik bezig met het experimenteren in Photoshop. Gewoon foto’s bewerken van mensen, mooie achtergronden zetten enzovoorts. Op een gegeven moment werd ik gevraagd om een flyer te maken voor een verjaardagsfeest. Van daaruit ging het rollen. Ik begon meer mensen binnen de scene te kennen, die aan mij vroegen of ik ook voor hun feest iets kon maken. Inmiddels ben ik al 10 jaar bezig.</p>
+
+	<p><i>Waarom ontwerp je voor feestjes?</i>
+Wat mij het meeste aantrekt is de vrijheid die je als ontwerper hebt tijdens het maken van producten voor een feest. Je kan makkelijker opnieuw beginnen als je niet tevreden bent over het resultaat. En positieve reacties motiveren ook.</p>
+
+	<h4>Kijk op feest als Gesamtkunstwerk</h4>
+	<p><i>Wat zijn de meest voorkomende disciplines bij een feestje?</i>
+In eerste instantie is het handiger om met meerde mensen (partners) een feest te organiseren. Dit doe je meer om de verschillende taken te verdelen. Maar vooral omdat er meerdere meningen zijn om het concept te versterken.
+Vanuit een marketing perspectief heb je in ieder geval mensen nodig die posters op straat plakken. Straat promotors, zij geven meestal flyers weg. Het ligt ook aan het budget wie je daarvoor kan vragen. Je kan naar particuliere bedrijven gaan die je posters plakken in abri’s.
+Voor de avond zelf zijn de DJ’s het belangrijkste. Ook de locatie speelt een belangrijke rol. Hoe bekender de plek, des te makkelijker het bezoekers het kunnen vinden.</p>
+
+	<p><i>Hoe belangrijk vind jij deze disciplines voor een feest?</i>
+Die zijn nodig om een concept te maken. Het is meestal de klant (organisator) die dat bij elkaar zet. En die mailt iedereen het concept met alle informatie. Ik zou niet echt hoeven worden betrokken bij het bedenken van een al geheel concept Dat is mijn taak ook niet. Mijn klanten kunnen dat zelf goed. Ik focus me meer op het ontwerp aspect. Tenzij ik zelf het feest organiseer.</p>
+
+	<p><i>Is er samenwerking tussen jou en de andere disciplines?</i>
+Bij het organiseren van een feest is dat er wel. Het is alleen essentieel essentieel dat de communicatie goed is. In het begin werkte ik met een webbouwer. Ik ontwierp het en hij bouwde het. Op een gegeven moment ben ik alleen door gegaan. Het koste te veel tijd. De klant wilt snel resultaat zien. Daardoor ben ik overgestapt op het aanschaffen van templates. Die kan je makkelijk zelf aanpassen en het ziet er goed uit. Je hebt meer zelf in de hand. 
+Maar echt samenwerken met andere creatieven doe ik weinig.
+Ik onderzoek hen wel, de klant mailt mij het concept met alle informatie zoals doelgroep, locatie en wie er draait. Die zoek ik op en van daaruit begin ik met een ontwerp. Zij beïnvloeden wel mijn designgedrag, je kan zeggen dat we indirect samenwerken.</p>
+
+	<p><i>Hoe denk jij dat jouw werk het ‘totale kunstwerk’ versterkt?</i>
+Door een bezoeker te enthousiasmeren om te komen naar het feest. En alle informatie te vertellen/verbeelden naar die persoon.</p>
+
+	<p><i>Wat denk jij dat de impact is, van de ontwerpen op de bezoekers?</i>
+Dat is groot. Het is de uitnodiging voor het feest, de eerste kennismaking. Men baseert hierop of ze naar het feest willen gaan. Daarom is het belangrijk dat het ontwerp mooi is. Maar ook het concept van een feest (en informatie) goed wordt verbeeld. Daarbij is het belangrijk dat de stijl constant blijft over alle verschillende media. Anders kan de bezoeker de link niet leggen hier tussen. Daar denk ik over na al tijdens het ontwerpproces.</p>
+
+	<p><i>Denk jij dat een feestje een Gesamtkunstwerk is?</i>
+Dat ligt aan het type feest dat wordt gegeven. De meer uitbundigere feesten zie ik wel als een Gesamtkunstwerk. Dat komt vooral door het combineren van live muziek, visuals, en performances die samensmelten met de muziek van de DJ. Deze worden ook minder vaak gegeven dan een normaal feest. Een feest wat elke zaterdag wordt gegeven, waar je dan ook elke zaterdag heen gaat wordt na een tijdje eentonig. Dan zie ik het ook niet meer als een Gesamtkunstwerk. Hier zie je toch hoe een concept bepaalt wat voor feest er wordt gegeven.
+</p>
+
+	<h4>Consequenties voor de designer, door het werken aan een Gesamtkunstwerk</h4>
+	<p><i>Heeft het ontwerpen voor feestje invloed gehad op jouw/jullie carrière?</i>
+Zeker, doordat ik er zo lang mee bezig ben heb ik een grote klanten kring kunnen opbouwen. Ik heb wel gemerkt dat mensen mijn werk mooi vinden. Dit vertellen ze aan de organisatie, die dat weer doorspeelt naar mij. Omdat mijn klanten vroegen of ik ook voor andere media kon ontwerpen ben ik daar ook geïnteresseerd in geraakt. Hierdoor heb ik een breder portfolio kunnen bouwen.</p>
+
+	<p><i>Heeft het ontwerpen voor feestjes invloed gehad op het werkprocces?</i>
+Het belangrijkste is dat ik veel vrijheid heb om iets te maken. Dit resulteert zich in dat ik meer tijd neem om een kwalitatief hoogstaand werk te maken. Ik ben meer op de details gaan letten. Een voorbeeld is als ik iets uitknip in Photoshop. Vroeger deed ik dat veel slordiger in vergelijking met nu. In het begin was de kwaliteit van mijn werk niet echt hoog. Maar doordat ik het vaker ging doen werdt het steeds beter. Dit merken klanten ook, soms gaat men naar een andere (goedkopere) ontwerpers en dan is het resultaat niet wat ze verwachten. Slordig gemaakte flyers en dergelijke. Hierdoor komt men weer terug naar mij.
+Ik word ook geïnspireerd door andere flyer ontwerpen. Hierbij kijk ik vooral naar ontwerpen die in een andere stijl zijn gemaakt in vergelijking met mijn stijl. Dit is van alles maar vooral retro-achtige ontwerpen en geillustrede flyers vind ik mooi.</p>
+
+	<p><i>Heeft het ontwerpen voor feestjes ook persoonlijk invloed gehad?</i>
+Klanten vroegen of ik ook voor andere media iets kon maken, hierdoor ben ik daar ook geïnteresseerd geraakt. Maar ik kijk wel anders naar allemaal verschillende ontwerpen. Vooral de foutjes pak ik snel op, en daar kan ik me aan irriteren als ontwerper. 
+Ik zie mezelf ook niet voor een groot bedrijf werken. Daar heb ik toch minder vrijheid waar ik wel veel waarde aan hecht. En dit beïnvloedt ook mijn werkproces; dat de keuze er is om ‘s nachts een flyer te maken vind ik fijn. Het ontwerpen voor feestjes heeft mij gevormd tot het  type ontwerper dat ik nu ben. Ontwerpen voor feestjes is nu ook de kern van al het werk dat ik maak. En van hieruit kan ik verder groeien naar andere disciplines.</p>
+
+	<p><i>Kijk je/jullie nu anders naar feestjes?</i>
+Feesten zijn tegenwoordig een saaie bedoeling. Ze lijken veel op elkaar, een DJ vragen om wat muziek te draaien, het publiek dat met een biertje staat te springen op de muziek en zien we wel verder. Er is geen vernieuwing meer. Een van de belangrijkste dingen bij een goed feest is de belevenis. Die is tegenwoordig ver te zoeken. 
+Maar er zijn wel mensen die er vernieuwing in brengen. DJ Fedde La Grand geeft een show in het Carré. Hierbij wordt zijn muziek gecombineerd met theater. En ik denk dat vooral het theater (show) element vernieuwend is. Dit zorgt er voor dat er meer te zien is waardoor de beleving veel groter is. Dit zou ik zelf wel een keer willen doen maar hiervoor heb je toch wel klanten nodig die hun nek hiervoor willen uitsteken.</p></p>
+</section></div>
+
+
+<div class="container">
+	<section>
+	<h3>178 aardige ontwerpers</h3>
+	<p><i>Hoe zijn jullie begonnen?</i>
+We zijn met ze 3-en begonnen op de Hogeschool voor de Kunsten in Utrecht, in de richting van grafisch ontwerp. Onze naam stamt af van lokaal 178, dit was (en is nog steeds) één van de vaste lokaal van de afdeling. We zijn nu zo een 15 jaar bezig met het creëren van campagnes en huisstijlen waarbij het belangrijk is dat er een reactie ontstaat.</p>
+
+	<h4>Kijk op feest als Gesamtkunstwerk</h4>
+	<p><i>Wat zijn de meest voorkomende disciplines bij een feestje?</i>
+Organisatie, locatie, DJ’s (programmering), ontwerpers en soms VJ’s.</p>
+
+	<p><i>Hoe belangrijk vind jij deze disciplines voor een feest?</i>
+Een van de belangrijkste onderdelen is de programmering. Voor een groot deel bepaalt dit waarom je naar een feest gaat. En de locatie, dit zet vooral de sfeer neer. Je gaat ook anders een ruimte in wanneer je weet dat het een oude fabriekshal was, of een nieuwe hyper moderne ruimte. Hierdoor wordt je geïnspireerd als creatief en bezoeker.</p>
+
+	<p><i>Is er samenwerking tussen de studio en de andere disciplines?</i>
+Over het algemeen niet. Iedereen werkt apart, doet zijn eigen ding wat in de visie ligt van de organisator. Het is de taak van een ontwerper om dat alles samen te brengen tot één geheel, wat de visie goed communiceert.
+Maar soms werken we samen met de andere disciplines, denk aan een nieuwe flyer ontwerpen met de foto’s van een vorige editie van het feest. Ook hebben we bij 11 een keer ge VJ-ed. Dit was dan meer om het al gemaakte art-work op een andere manier te presenteren. Maar dat doe je meestal niet, omdat het te veel werk is en niet de kwaliteit bezit om echt goede producten te maken vanuit die verschillende disciplines. Daar heb je toch specialisten voor nodig. Die schakelt meestal de organisatie in.</p>
+
+	<p><i>Waar denk je dat jullie werk het ‘totale kunstwerk’ versterkt?</i>
+De rol van de ontwerper is op de eerste plaats het maken van de verschillende visuele uitingen. Het ligt ook aan de organisatie in hoeverre zij de ontwerper in het proces willen betrekken.
+In het geval van club 11 en Trouw waren wij in een hechte samenwerking met de eigenaren. Er lagen wel ideeën over waar de clubs naar toe zouden willen groeien en wat voor stijl daarbij interessant zou zijn. We zijn begonnen door eerst het verhaal en sfeer duidelijk neer te zetten over wat de club is en waar het naar toe zou groeien. Dit zorgt voor een duidelijke visie wat als het fundament dient van de club. Hierop kan terug gegrepen worden als de visie door de tijd heen uit het oog wordt verloren.
+Van daaruit waren we samen gaan nadenken over de andere aspecten zoals de naam, design, aankleding enzovoorts. Hierbij hebben alle verschillende creatieven hun expertise. Dit komt dan allemaal samen in een huisstijl. Als ontwerper zit je toch meer in een dienende rol. Je bent één onderdeel van het geheel. Maar wat je ook doet is het wel helpen vormen van de overall visie maar niet daarbij ook alles maken. Het is de taak van een ontwerper om alles samen te brengen tot één geheel dat communiceert.</p> 
+
+	<p><i>Wat denk jij dat de impact is, van de ontwerpen op bezoekers?</i>
+Een consistente ontwerpstijl zorgt voor herkenbaarheid bij de bezoekers. Bij 11 was er uiteindelijk een soort van ongeschreven pay-off: wees jezelf. Publieks participatie was belangrijk, iedereen hielp mee aan het maken van een leuk feest. Een voorbeeld is dat we een campagne hebben gedaan waarbij we men vroegen om teksten of slogan over 11 te maken. Dat hebben wij vervolgens weer gebruikt in de artwork voor de posters, website, flyers, facebook etcetera. Ook de menuboekjes zijn hiervan een voorbeeld. Hierin mocht je zelf tekenen of dingen schrijven. Het bijzondere was dat er ook echt iets mee gedaan. De bezoekers voelde zich gewaardeerd waardoor ze vaker terugkwamen.</p>
+
+	<p><i>Denk jij dat een feestje een Gesamtkunstwerk is?</i>
+Jawel. Alle verschillende elementen/disciplines moeten goed vallen om een fijn gevoel te creëren waarbij bezoekers merken dat ze echt even ergens anders zijn. En hiervoor komen ze terug. Voordat een feestje (of in ons geval een club) dit gevoel goed kan overbrengen, zal er toch wat tijd, moeite en samenwerking in zitten om dit te realiseren.</p>
+
+	<h4>Consequenties voor de designer, door het werken aan een Gesamtkunstwerk</h4>
+	<p><i>Heeft het ontwerpen voor feestje invloed gehad op de studio?</i>
+Wij hebben de huisstijl van club 11 redelijk vroeg gemaakt na de oprichting van 178. Het heeft ons zeker andere klanten opgeleverd, die dan vragen of je zoiets voor hun kunt maken. Dat is dan weer lastig want je wilt niet hetzelfde maken voor hen. Er is ook een keerzijde, misschien zijn we door dat werk andere potentiële klanten verloren die denken dat wij alleen maar wilde dingen kunnen maken. Terwijl we net zo goed een strakke huisstijlen kunnen ontwerpen wat op een ander niveau goed werkt.</p>
+
+	<p><i>Heeft het ontwerpen voor feestjes invloed gehad op het werkproces?</i>
+Het werk evolueert wel. Onze stijl is nu strakker geworden. Bij 11 wilden we allemaal verschillende technieken met elkaar combineren. Van klei, purschuim tot illustraties enzovoorts. Door het experimenteren kwamen we erachter of een ontwerp werkt of niet. En soms past het dan niet, maar realiseer je je dat die ontdekking wel zou kunnen werken bij een andere klant.
+Zo zijn we ook een beetje aan de slag gegaan bij Trouw. We waren makkelijk een week bezig met een poster. In het begin waren de ontwerpen rauwig net zoals de locatie. Dat was toen ook de tijdsgeest. Op een gegeven moment was er toch een rebrand nodig geweest om duidelijker te communiceren dat de Trouw meer is dan alleen een club. Voor ons was dat proces van de rebrand ook interessant omdat je toch wilt meegroeien met de klant en hen een goed product wil meegeven. Dan zijn mooie posters van minder belang en ga je meer nadenken over andere manieren van communicatie. Bijvoorbeeld meer digitaal. Investeren in een goede website / online omgeving kan helpen bij het budget. Hierdoor hoef je minder drukwerk te produceren. Het licht ook aan de doelgroep, bij ons zijn die ook veelal actief op social media. Dit soort dingen neem je weer mee naar de volgende opdracht.</p>
+
+	<p><i>Kijken jullie nu anders naar feestjes?</i>
+Misschien wel, je analyseert sneller een omgeving en begrijpt beter waarom een ruimte zo is ingedeeld of wat voor effect een poster heeft. Maar ik denk dat je als ontwerper altijd wel anders kijkt naar verschillende dingen. Omdat je dagelijks voor je opleiding of werk afvraagt wat de bedoeling is van dat object. Maar wanneer het concert of de dansavond begint, ben ik het zo weer vergeten.</p>
+</section></div>
+
+<div class="container">
+	<section>
+	<h3>Kleurbleur</h3>
+	<p><i>Hoe zijn jullie begonnen met het ontwerpen voor feestjes?</i>
+M: Voor ons is het op verschillende manieren begonnen, ik ben er al wat langer mee bezig. Toen ik 18 was startte ik met VJ-en, dat was een uit de hand geworden hobby uiteindelijk. Tijdens een feestje ben ik in contact gekomen een VJ die net een beta van nieuwe software op zijn computer had gezet. Hierop vroeg hij mij of ik het wilde uitproberen. Zodoende heb ik de hele avond staan VJ-en. En dit vond ik super interessant  en de VJ zei dat ik het ook goed deed.Op een gegeven moment stond ik 3 keer per week te VJ-en in een club onder de naam Kleurbleur.
+Met het pure VJ-en, dus content op wat schermen laten zien wat weer reageert op de muziek, daar ben ik 4 jaar geleden mee gestopt omdat het saai werd uiteindelijk. Zo een beetje na het afstuderen vormde ik Kleurbleur om naar een bedrijf wat zich ging richten op het creëren van verschillende visuele aspecten waar live muziek bij betrokken is. Dit kan een feest zijn maar ook bijvoorbeeld een concert. Op een gegeven moment zag ik dat Arion daar ook mee bezig was en vroeg ik hem of we samen konden werken.
+
+A: Ik ben altijd veel bezig geweest met het combineren van beeld en muziek. Dit resulteerde in mijn onderwerp voor mijn eindexamen aan de KABK. Toen werkte ik veel samen met INI Movement, dit is een platform voor muzikanten en kunstenaars die deze twee disciplines combineert. Er werden avonden (ArtEffects) georganiseerd waar dit te zien was. Op een gegeven moment vroeg een zangeres of ik ook kon VJ-en. Ik zei “ja” terwijl ik het nog nooit had gedaan. Dankzij haar heb ik Modul8 gedownload en ben daar mee aan de slag gegaan. En dat vond ik best wel vet waardoor ik meer in de software ben gaan verdiepen. Hierdoor ben ik met videomapping aan de slag gegaan.
+Op een gegeven moment ben ik samen met Mark aan de slag gegaan toen er een opdracht kwam waarbij een installatie nodig was met videomapping, muziek en programmeren. Hierbij vulden we elkaar aan tijdens het proces. Sindsdien zijn we samen blijven werken aan projecten.</p>
+
+	<p><i>Waarom ontwerpen jullie voor feestjes?</i>
+A: Het is een passie en motivatie om met en voor muziek werk te creëren. Hierdoor kom je al snel uit bij muzikanten. Hierbij probeer ik altijd muziek en visuals of design samen te brengen tot één ding.
+
+M: Voor mij gaat het vooral om de beleving van een feestje en hoe ik daaraan bij kan dragen. Deze moet kloppen, daarbij hoeft het niet persee visuals bij te zijn. Zolang alles op zijn plek valt, ben ik al tevreden. 
+Kijk op feest als Gesamtkunstwerk
+Hoe denken jullie over andere visuele disciplines bij een feestje?
+M: Je kan niet bij een feest alles bij elkaar gooien en hopen dat er een goed resultaat uit komt. Daarom heb ik gekozen om alles zoveel mogelijk zelf in handen te houden als het gaat om het visuele aspect. Lukt dat niet dan vraag ik al vroeg aan andere creatieven om mee te helpen. Zo kan je alles beïnvloeden zodat het één geheel blijft.</p>
+
+	<p><i>Hoe belangrijk vinden jullie deze disciplines voor een feest?</i>
+M: Het ligt een beetje aan wat voor avond het is. Tijdens een normale club avond waarbij er een VJ is, kan je dit meer zien als een toevoeging. Daar is dan misschien de rol van een lichtman wel belangrijker. Maar bij een show kan juist die VJ meer los maken bij de bezoekers. Dit geld voor alle disciplines.</p>
+
+	<p><i>Is er samenwerking tussen jullie en de andere disciplines?</i>
+M: Dat is erg belangrijk want dat komt de avond ten goede. Als VJ werkte ik veel samen met lichtmannen. Er is een groot verschil als we elkaar begrepen. Als bijvoorbeeld de lichtman de zaal vult met veel blauw licht, dan wist ik dat de volgende scene of contrasterende kleur (rood) moet hebben, of een zelfde soort kleur wat weer goed past bij het licht. Dit zijn van die dingen die je van elkaar aanvoelt.
+
+A: Vooral de muziek is belangrijk. En dan vooral de combinatie van beeld en geluid. Er komt vaker een mooier resultaat door die samenwerking. Alles wordt dan één geheel waardoor je geen onderscheidt meer ziet tussen de twee. Daarom denk ik dat het belangrijk is om elementen uit de muziek soms te verbeelden. Bijvoorbeeld wanneer er een kick in de muziek komt, dat zie je dat in de vorm van een projectie of lichtflits.</p>
+
+	<p><i>Wat denk jij dat de impact is, van de ontwerpen op bezoekers?</i>
+A: Als alles helemaal wordt doorgetrokken, dan worden de verschillende zintuigen te gelijken tijd beter gestimuleerd. Hierdoor komt dat dieper binnen bij een bezoeker. En als dat bij mij goed werkt, dan ga ik ervan uit dat de bezoekers hetzelfde voelen.
+
+M: Mensen reageren er best wel sterk op. Wanneer alles klopt geeft dat een fijn gevoel aan de mensen, de energie gaat omhoog en er is meer plezier. Wanneer dit niet het geval is word de sfeer ook negatiever. Deze dingen merk je ook als artiest op het podium.
+
+A: Het belangrijkste is dat (in ons geval installaties) alles klopt en past bij de ruimte.</p>
+
+	<h4>Consequenties voor de designer, door het werken aan een Gesamtkunstwerk</h4>
+	<p><i>Heeft het ontwerpen voor feestje invloed gehad op de studio?</i>
+A: Zeker, de meesten klanten komen bij ons niet via de website maar via andere mensen die vertellen wat we allemaal doen. Het staan op een feestje of festival zorgt er toch voor dat meer mensen ons werk zien. Het heeft wel geleid tot meer werk.</p>
+
+	<p><i>Heeft het ontwerpen voor feestjes invloed gehad op het werkprocces?</i>
+A: Als ik op een feestje ben, ben ik wel benieuwd hoe sommige aspecten in elkaar zitten. Hoe is het design? Wat voor andere spullen er worden gebruikt en hoe wordt dat ingezet. Hier probeer ik dan van te leren of het eventueel toepasbaar is voor een ander project waar ik aan werk.</p>
+
+	<p><i>Kijk je/jullie nu anders naar feestjes?</i>
+M: Af en toe betrap ik mezelf aan het feit dat ik de foutjes van een avond snel zie. Wanneer een VJ meer zijn eigen ding laat zien of als de lichtman de ruimte voor een kort tijd helemaal verkeert belicht. En hier kan ik me soms aan irriteren. Gelukkig is dat tegenwoordig minder.</p></section></div>
+
+
+<!-- !HOOFDSTUK 3 -->
+<div class="container">
+	<section id="reflectie-interviews">
+	<h2>Reflectie interviews</h2>
+	<p>Na het houden van alle drie de interviews kreeg ik de indruk dat deze ontwerpers redelijk op een lijn zitten wat betreft hun mening over het ontwerpen voor feestjes. Alle ontwerpers zijn het met elkaar eens, dat bij een feest alles samen moet komen; dat het feest gevoelsmatig moet kloppen. Als alles samenkomt, is de kans dat het feestje slaagt groter. De reacties van de ontwerpers waren dan ook in lijn met mijn verwachtingen. 
+Feesten kunnen een Gesamtkunstwerk zijn. Maar dit label krijgt het alleen als alle verschillende elementen goed samen komen. Hier werk je samen aan. Waar ik wel verbaasd over was, is dat er best weinig samenwerking is tussen de verschillende disciplines. Of er fysiek samengewerkt wordt, heeft vooral met de opdrachtgever (organisatie) te maken. Over het algemeen gebeurt dat niet. Soms is het wel mogelijk. Hier ligt een cruciale taak voor de organisator, om al het werk succesvol bij elkaar te brengen en ervoor te zorgen dat het ‘klopt’. 
+
+Na deze drie interviews gedaan te hebben werden er twee punten duidelijk; ten eerste dat de organisatie een goede visie of concept moet hebben voor de pARTy. Hierin is de eerste en belangrijkste keuze van de organisator, welke DJ’s/muzikanten en locatie er word gekozen. Dit zorgt er vaak voor dat een bezoeker zijn keuze maakt om naar een specifiek feest gaan. 
+Ten tweede is dat de creatieve disciplines een dienende rol vervullen. Hierin is dan wel de rol van de ontwerper belangrijk omdat er iets gecommuniceerd moet worden. Hoe dat gebeurt is per opdrachtgever verschillend. De bezoeker krijgt de feesten vaak te zien via een poster of flyer (online media wordt steeds belangrijker), wat dan weer geldt als de eerste kennismaking. Hierbij is het dus belangrijk dat het ontwerp de juiste sfeer van het feest verbeeldt.
+
+Uit de interviews blijkt dat er wel een duidelijke scheidslijn is tussen de organisatie en de creatieve disciplines. Als creatief kan je wel advies geven over hoe iets anders zou kunnen.</p>
+</section></div>
+<div class="container">
+	<section id="conclusie">
+	<h3>Conclusie</h3>
+	<p>Het belangrijkste van elk feest is dat het ‘klopt’. Dit maakt een feest per definitie subjectief, want wat ‘klopt’ verschilt per mens. Dit maakt het lastig om hier een alles omvattend antwoord op te geven. Ik denk dat het ‘klopt’  een soort gevoel, of idee is. Wat ik heb ontdekt uit mijn gesprekken en onderzoek is dat muziek en locatie hierbij de meest essentiële onderdelen zijn zijn. Omdat je een gevoel wilt delen, organiseer je een feest, of ga je er naartoe. Eigenlijk is een feest de ultieme vorm van een presentatie. Want door het combineren van alle verschillende creatieve disciplines wordt er een fantasiewereld geschapen, wat als enig doel dient om te laten zien waarom jouw gevoel, of idee zo vet is. Hoe meer fijne impulsen er worden afgevuurd op de verschillende zintuigen, des te overtuigender de visie over komt op de bezoeker. 
+Daarom zie ik een feest als een Gesamtkunstwerk, net als Wagner met zijn opera’s.
+
+Maar waarom is muziek en locatie het fundament voor een feest? Ze spreken het snelst de fantasie aan van mensen. Het functioneert als de inspiratiebron voor de organisatie en de creatieve disciplines. Het feest krijgt hierdoor een tastbare vorm voor het concept van het uiteindelijke Gesamtkunstwerk. Bij de opera’s van Wagner is dit ook het geval. Hierbij denk ik toch dat muziek een iets belangrijkere functie heeft dan locatie. Men wordt hierdoor begeleid door die fantasiewereld. Het is het verhaal van de avond. De basis van alles. En wanneer dit onderdeel niet ‘klopt’, werkt het hele feest niet. Hoe vaak heb je gehoord dat een feest slecht was door de muziek? Precies, vaak!
+
+Het fijne van een feest maken voor een specifieke muziekstroming is dat je als organisator niet ver hoeft te zoeken naar een doelgroep, deze is inherent aan de muziek. Je zal nooit iemand die een hekel heeft aan bijvoorbeeld disco, vrijwillig op een feest zien waar voornamelijk disco word gedraaid. Ik denk ook dat je als creatief langer gaat nadenken of je een ontwerp opdracht aanneemt van een feest wanneer je geen affiniteit hebt met de muziek.
+
+De locatie is één van de grootste bronnen wat sfeer betreft voor een feest. Het is visueel. Het inspireert al voordat de muziek begint. Met een goede locatie is er minder nodig voor de aankleding van de ruimte. In de basis zijn alleen deze drie elementen nodig voor een feest. 
+Wanneer deze drie basis onderdelen kloppen; sfeer, muziek (verhaal), locatie (beeld/visueel)- wordt er een coherent concept gevormd. Hieruit kunnen alle andere disciplines aanhaken om het Gesamtkunstwerk te voltooien.
+ 
+Maar waar staat grafisch ontwerp hierin dan? Allereerst zijn de ontwerpen puur een middel om te communiceren. Wie komt er, waar is het en tot hoe laat duurt het? Zonder succesvolle communicatie van de grafisch ontwerper komt er geen publiek. En eigenlijk kan een feest nooit een geslaagd Gesamtkunstwerk worden zonder publiek. Waarom? Feesten is vooral gebaseerd op positieve reacties. Van oorsprong zijn mensen kuddedieren die sterk beïnvloedbaar zijn door de reacties en aanwezigheid andere mensen. Dit kuddegedrag is de brandstof die het feest gaande houdt. Als er veel mensen om je heen dansen, dan ben je al snel geneigd dat ook te doen. Dit gebeurt bij iedereen tot dat de hele zaal danst. DJ’s zien dansen als een positieve reactie waardoor zij met nog meer overgave gaan draaien. Hierdoor komt de bezoeker nog meer in extase. Combineer dit met dan drugs, de ruimte, het lichtplan, VJ’s enzovoorts en er ontstaat een wisselwerking van reacties. Ik denk dat dit de kern is van een succesvol feest als Gesamtkunstwerk.
+
+Als voorbeeld neem ik het uitermate succesvolle schoolfeest van BAKK uit 2011. Alle onderdelen voor dit feest waren ontworpen door de organisatie. Muziek, posters en de aankleding van de locatie. Maar het belangrijkste onderdeel kwam van de bezoekers. Iedereen kwam in zelf gecreëerde extravagante outfits binnen. Deze visuele pracht gaf men nog beter het gevoel van samenhorigheid. Dit zorgde er voor dat men zich nog meer ging inleven de fantasiewereld die gecreëerd was. Wat was nou het resultaat? Een feestje wat legendarisch is geworden doordat het Gesamtkunstwerk geweldig op het gevoel van iedereen heeft ingespeeld! Nu nog praten mensen erover en hopen andere om het mee te maken. Dit maakt een feestje ART.</p>
+</section></div>
+
+
+<!-- !BRONNEN -->
+<div class="container">
+	<section id="bronnen">
+	<p>Berlin, C. (n.d.). Rave art.
+Collins, R. (2004). Interaction ritual chains. Princeton, N.J.: Princeton University Press.
+Dietvorst, J. and Hiddink, J. (2008). Paradiso posters 1968-2008. [Amsterdam]: De Buitenkant.
+Filosofie.nl, (2014). Arthur Schopenhauer - Filosofie.nl. [online] Available at: http://www.filosofie.nl/nl/sleutelfiguren/16/arthur-schopenhauer.html [Accessed 18 Dec. 2014].
+Gammer, Z. (2014). Feest als een Gesamtkunstwerk.
+Hoekstra, J. (2014). Feest als een Gesamtkunstwerk.
+Hurley, S. and Chater, N. (2005). Perspectives on imitation. Cambridge, Mass.: MIT Press.
+InfoNu, (2014). Romantiek, een culturele stroming. [online] Available at: http://mens-en-samenleving.infonu.nl/sociaal-cultureel/2549-romantiek-een-culturele-stroming.html [Accessed 18 Dec. 2014].
+Kossmann, H., Mulder, S., Oudsten, F. and Kiewiet de Jonge, P. (2012). Narrative spaces. Rotterdam: 010 Publishers.
+Lehmann, H. (2006). Postdramatic theatre. London [i.e. Abington, Oxon]: Routledge.
+Lenys, B. (1972). Richard Wagners ‘Gesamtkunstwerk’. Vlaanderen, [online] (Jaargang 21), pp.283-285. Available at: http://www.dbnl.org/tekst/_vla016197201_01/_vla016197201_01_0100.php [Accessed 19 Dec. 2014].
+Oosterling, H. (2008). Het Gesamtkunstwerk of samen-werken?. [online] Available at: http://www.henkoosterling.nl/gesamtkw-arnhem.html [Accessed 18 Dec. 2014].
+Resident Advisor, (2011). Real Scenes: Berlin. [image] Available at: http://www.residentadvisor.net/feature.aspx?1405 [Accessed 19 Dec. 2014].
+Ridder, M. and de Munck, A. (2014). Feest als een Gesamtkunstwerk.
+Rooy, M. (1981). Kunstschrift. Weesp: Openbaar Kunstbezit.
+The Metropolitan Opera HD Live. (2011). [DVD] New York: Gary Halvorson.
+Wagner, R. (1850). Das Kunstwerk der Zukunft. Leipzig: [s.n.].
+Wikipedia, (2014). Gesamtkunstwerk. [online] Available at: http://en.wikipedia.org/wiki/Gesamtkunstwerk [Accessed 19 Dec. 2014].</p>
+</section></div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<form>
+			<p>Change the time</p>
+			<p id="time">12</p>
+			<input id="time_of_day" type="range" min="0" max="24" />
+		</form>
+	</div>
+</body>
